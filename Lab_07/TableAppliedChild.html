@@ -1,0 +1,87 @@
+<html>
+	<script>
+		function AddList()
+		{
+			var FIRSTNAME = document.getElementById("FNAME");
+			var TELEPHONE = document.getElementById("PHONE");
+			var ADDRESS = document.getElementById("ADDRESS");
+			
+			var td_FIRSTNAME = document.createElement("td");
+			td_FIRSTNAME.innerHTML = FIRSTNAME.value;
+			
+			var td_TELEPHONE = document.createElement("td");
+			td_TELEPHONE.innerHTML = TELEPHONE.value;
+			
+			var td_ADDRESS = document.createElement("td");
+			td_ADDRESS.innerHTML = ADDRESS.value;
+			
+			var tr = tr.createElement("tr");
+				tr.appendChild(td_FIRSTNAME);
+				tr.appendChild(td_TELEPHONE);
+				tr.appendChild(td_ADDRESS);
+			
+			var TABLE = table.getElementById("table");
+				TABLE.appendChild(tr);
+			
+		}
+		window.onload =  function()
+		{
+			var buttonX = document.getElementById("ButtonClick");
+			buttonX.onclick = AddList;
+		}
+	</script>
+	<style>
+		.center	{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div {
+			text-align: center;
+		}
+		tr,td,th {
+			border: 2p solid black;
+		}
+		table {
+			border: 2px solid black;
+		}
+		label {
+			display: inline-block;
+			margin-bottom: 10px;
+			width: 30%;
+		}
+		.button	{
+			
+		}
+	</style>
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+</head>
+
+<body>
+	<form>
+		<div>
+			<label for="FNAME"><b>NAME : </b></label>
+			<input type="text" id="FNAME" name="FNAME">
+		</div>
+		<div>
+			<label for="TELEPHONE"><b>TELEPHONE : </b></label>
+			<input type="text" id="PHONE" name="PHONE">
+		</div>
+		<div>
+			<label for="ADDRESS"><b>ADDRESS : </b></label>
+			<input type="text" id="ADDRESS" name="ADDRESS">
+		</div>
+		<div>
+			<input type="button" value="ADDED" id="ButtonClick">
+		</div>
+	</form>
+	<table class="center" id="table">
+		<tr>
+			<th>NAME</th>
+			<th>TELEPHONE</th>
+			<th>ADDRESS</th>
+		</tr>
+	</table>
+</body>
+</html>

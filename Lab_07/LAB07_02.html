@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LAB_07_02</title>
+	<script> 
+		function ResultClick()
+		{
+			var inA;
+			var inB;
+			var sum;
+				inA = parseFloat(document.form1.textA.value);
+				inB = parseFloat(document.form1.textB.value);
+			if (MFunc = add)	
+			{
+				sum=inA+inB;
+				document.form1.total.value = sum;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form action = "page.cgi" method="post" name = "form1">
+		<input type = "text" id = "textA" name="textA">
+			<select id="MFunc" name="MFunc">
+ 				<option value="add" id="add">+</option>
+  				<option value="sub">-</option>
+  				<option value="multiply">*</option>
+  				<option value="divide">/</option>
+			</select>
+		<input type = "text" id = "textB" name="textB" >
+		<p> = </p>
+		<input type = "text" id = "total" name = "total">
+	</form>
+	<button type = "button" value = "result" onclick="ResultClick()">
+</body>
+</html>

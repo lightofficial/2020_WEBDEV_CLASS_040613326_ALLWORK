@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<style>
+		input[type=text]:focus {
+ 		 border: 3px solid #555;
+		}
+		
+		
+		input[type=text_address]{
+			width: 50%;
+		}
+		input[type=text_postcode]{
+			width
+		}
+		.container	{
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+	</style>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+</head>
+
+<body>
+	
+	<p><b>แบบฟอร์มจองทัวร์</b></p><br>
+	<p>ข้อมูลทั่วไป</p>
+	<div class="container">
+	<form action="/action_page.php">
+	<label for="fname">ชื่อ-สกุล</label><br>
+		<input type="text" id="fname" name="fname" value="กรอกชื่อ-สกุล"> <br>
+	<label for="email">Email:</label><br>
+		<input type="text" id="email" name="email"
+		value=""> <br>
+	<label for="phone">โทรศัพท์ :</label><br>
+		<input type="text" id="phone" name="phone"
+		value="+66"> <br>
+	<label for="address">ที่อยู่ : </label><br>
+		<input type="text_address" id="address" name="address"
+		value=""> <br>
+	<label for="postcode">รหัสไปรษณีย์</label><br>
+		<input type="text" id="postcode"
+		name="postcode" value=""> <br>
+	<label for="img">รูปผู้จอง : </label>
+		<input type="file" id="img" name="img" accept="image/"><br>
+	</form>
+		</div>
+	
+	<p>ข้อมูลเข้าสู่ระบบ</p>
+	<div class="container">
+	<form action="/action_page.php">
+		<label for="username">Username:</label><br>
+		<input type="username" id="username" name="username"
+		value=""><br>
+		<p>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</p>
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"
+		value=""><br>
+		<p>ประกอบด้วยอักขระอะไรก็ได้ 8 ขึ้นไป</p>
+	</form>
+	</div>
+	
+	<p>ข้อมูลทัวร์ที่ต้องการ</p>
+	<div class="container">
+	<form action="/action_page.php">
+	<label for="Package">แพคเก็จทัวร์ : </label>	
+		<select id="package" name="package">
+		<option value="select">--select--</option>
+		</select><br>
+	<label for="Date">วันที่เดินทาง :</label>
+		<input type="date" id="date" name="date" ><br>
+	</form>
+	<label for="amount">จำนวนผู้เดินทาง :</label>
+		<input type="text" id="amount" name="amount"><br>
+		<p>เน้นการท่องเที่ยวแบบใด?</p>
+	<label for="checkbox">ช็อปปิ้ง</label>
+		<input type="checkbox">
+		<span class="checkmark"></span><br>
+	<label for="checkbox">ธรรมชาติ</label>
+		<input type="checkbox">
+		<span class="checkbox"></span><br>
+	<label for="checkbox">ทะเล</label>
+		<input type="checkbox">
+		<span class="checkbox"></span><br>
+	</div>
+	
+	<p>ยอมรับเงื่อนไขและตกลง</p>
+	<label for="radio">I agree</label>
+		<input type="radio" name="radio">
+		<span class="checkmark"></span>
+	<label for="radio">I disagree</label>
+		<input type="radio" name="radio">
+		<span class="checkmark"></span>
+	
+	<button type="submit" value="Submit">จอง</button>
+</body>
+</html>

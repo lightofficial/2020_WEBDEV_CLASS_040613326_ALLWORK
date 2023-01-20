@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		
+		let student = 
+			[
+				{
+					fullname:'นายตั้งใจ เรียนมาก',
+					age:18,
+					year:1,
+					gpa:3.40,
+					help:true
+				},
+				{
+					fullname:'นายส่งงาน ตลอดมา',
+					age:19,
+					year:2,
+					gpa:3.00,
+					help:false
+				},
+				{
+					fullname:'นายตั้งใจ เรียนมาก',
+					age:20,
+					year:3,
+					gpa:2.90,
+					help:true
+				}
+			]
+			let i = 0 , Length = student.length
+			while (i < Length)
+				{
+					if (student[i].gpa >= 3.20)
+						{
+							console.log('นักเรียนที่มี GPA มากกว่า 3.20 \n')
+							console.log(student[i])
+							console.log('\n')
+						}
+					else if (student[i].year >= 2)
+						{
+							if (student[i].gpa)
+								{
+									console.log('นักเรียนที่มี GPA มากกว่า 2.75 และ อยู่ชั้นปีที่ 2 เป็นต้นไป ')
+									console.log(student[i], '\n')
+								}
+						}
+					i++
+				}
+	</script>
+<meta charset="UTF-8">
+<title>JS_LAB06</title>
+</head>
+
+<body>
+	<h1> Lab 06 Basic Javascript</h1>
+</body>
+</html>

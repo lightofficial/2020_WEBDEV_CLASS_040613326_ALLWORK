@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		
+		let student = 
+			[
+				{
+					fullname:'นายตั้งใจ เรียนมาก',
+					age:18,
+					year:1,
+					gpa:3.40,
+					birth:2546,
+					help:true,
+					reason:'ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์ และ ยังช่วยเหลืองานภาควิชาด้วย'
+				},
+				{
+					fullname:'นายส่งงาน ตลอดมา',
+					age:19,
+					year:2,
+					gpa:3.00,
+					birth:2545,
+					help:false,
+					reason:'ไม่ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์ และ ยังไม่ช่วยเหลืองานภาควิชาด้วย'
+					
+				},
+				{
+					fullname:'นายตั้งใจ เรียนมาก',
+					age:20,
+					year:3,
+					gpa:2.90,
+					birth:2544,
+					help:true,
+					reason:'ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์ และ ยังช่วยเหลืองานภาควิชาด้วย'
+				}
+			]
+			let i = 0 , Length = student.length
+			while (i < Length)
+				{
+							if (student[i].year == 1)
+							{
+								console.log('ชั้นปีทั้ 1')
+								if (student[i].gpa >= 3.20)
+									{
+										console.log(student[i].fullname,student[i].reason)
+									}
+								else
+									{
+										console.log('ไม่มี')
+									}
+							}
+							else if (student[i].year == 2 )
+							{
+								console.log('ชั้นปีทั้ 2')
+								if ((student[i].year >= 2 && student[i].gpa >= 2.75 && student[i].help == true))
+								{
+									console.log(student[i].fullname,student[i].reason)
+								}
+								else
+									{
+										console.log('ไม่มี')
+									}
+							}
+							else if (student[i].year == 3)
+							{
+								console.log('ชั้นปีทั้ 3')
+								if ((student[i].year >= 2 && student[i].gpa >= 2.75 && student[i].help == true))
+								{
+									console.log(student[i].fullname,student[i].reason)
+								}
+								else
+									{
+										console.log('ไม่มี')
+									}
+							}
+							else if (student[i].year == 4)
+							{
+								console.log('ชั้นปีทั้ 4')
+								if ((student[i].year >= 2 && student[i].gpa >= 2.75 && student[i].help == true))
+								{
+									console.log(student[i].fullname,student[i].reason)
+								}
+								else
+									{
+										console.log('ไม่มี')
+									}
+							}		
+					i++
+				}
+	</script>
+<meta charset="UTF-8">
+<title>JS_LAB06</title>
+</head>
+
+<body>
+	<h1> Lab 06 Basic Javascript</h1>
+</body>
+</html>

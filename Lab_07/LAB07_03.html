@@ -1,0 +1,33 @@
+<html>
+	<script>
+		var size = 14;
+		function decrease()
+		{
+			var fontsize = document.getElementById("p1");
+			size = size - 1;
+			fontsize.style.fontSize = size;
+		}
+		
+		function increase()
+		{
+			var fontsize = document.getElementById("p1");
+			size = size + 1;
+			fontsize.style.fontSize = size;
+		}
+	</script>
+<head>
+<meta charset="UTF-8">
+<title>LAB07_03</title>
+</head>
+	
+<body>
+	<h1>
+		<span onclick = "decrease()"> - </span> 
+		|
+		<span onclick = "increase()"> + </span>
+	</h1>
+	<p id ="p1">
+		If you're Leavin',will you take me with you? I'm tired of talkin' on my phone There is one thing I can never give you My Heart will never be your home
+	</p>
+</body>
+</html>

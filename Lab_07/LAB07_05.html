@@ -1,0 +1,77 @@
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Lab no.5</title>
+    <style>
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+            width: 70px;
+        }
+        .setButton{
+            margin-bottom: 30px;
+        }
+        table{
+            border: 1px solid black;
+        }
+        tr , th , td{
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function Addlist(){
+            var fname = document.getElementById("fname");
+            var address = document.getElementById("address");
+            var tel = document.getElementById("tel");
+
+            var td_fname = document.createElement("td");
+            td_fname.innerHTML = fname.value;
+
+            var td_address = document.createElement("td");
+            td_address.innerHTML = address.value;
+
+            var td_tel = document.createElement("td");
+            td_tel.innerHTML = tel.value;
+
+            var tr = document.createElement("tr");
+            tr.appendChild(td_fname);
+            tr.appendChild(td_address);
+            tr.appendChild(td_tel);
+
+            var table1 = document.getElementById("Ptable");
+            table1.appendChild(tr);
+        }
+
+        window.onload = function() {
+            var button1 = document.getElementById("AddButton");
+            button1.onclick = Addlist;
+        }
+    </script>
+
+    <body>
+        <form action="">
+            <div>
+                <label for="fname">ชื่อลูกค้า : </label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div>
+                <label for="address">ที่อยู่ : </label>
+                <input type="text" name="address" id="address">
+            </div>
+            <div>
+                <label for="tel">โทรศัพท์ : </label>
+                <input type="text" name="tel" id="tel">
+            </div>
+            <div class="setButton">
+                <input type="button" value="เพิ่ม" id="AddButton">
+            </div>
+        </form>
+        <table id="Ptable">
+            <tr>
+                <th>ชื่อลูกค้า</th>
+                <th>ที่อยู่</th>
+                <th>โทรศัพท์</th>
+            </tr>
+        </table>
+    </body>
+</html>

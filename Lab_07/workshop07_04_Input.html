@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WORKSHOP07_04_Input</title>
+	<script> 
+		function ResultClick()
+		{
+			var inA;
+			var inB;
+			var sum;
+				inA = parseFloat(document.form1.textA.value);
+				inB = parseFloat(document.form1.textB.value);
+			sum=inA+inB;
+			document.form1.total.value = sum;
+		}
+	</script>
+</head>
+
+<body>
+	<form action = "page.cgi" method="post" name = "form1">
+		<input type = "text" id = "textA" name="textA">
+		<p> + </p>
+		<input type = "text" id = "textB" name="textB" >
+		<p> = </p>
+		<input type = "text" id = "total" name = "total">
+		<input type = "button" value = "result" onclick="ResultClick()">
+	</form>
+</body>
+</html>

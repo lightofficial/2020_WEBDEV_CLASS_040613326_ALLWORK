@@ -1,0 +1,13 @@
+header{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:50px;
+  background: #eeeeff;
+}
+section{
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right:  60px;
+}
